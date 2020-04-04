@@ -13,4 +13,5 @@ RUN ln -s /BUILDDIR/settings.xml /root/.m2/settings.xml
 
 RUN ln -s /MAVENREPO /root/.m2/repository
 
-RUN echo "JAVA_HOME=/JDK/current" >> /etc/environment
+RUN echo "export JAVA_HOME=/JDK/current" >> /etc/environment
+RUN echo "export JAVA_HOME=/JDK/current" >> /root/.bashrc
